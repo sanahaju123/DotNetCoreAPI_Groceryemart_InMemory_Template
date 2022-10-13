@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GroceryEmart.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -32,6 +31,7 @@ namespace GroceryEmart.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Route("All-Users")]
         public async Task<IEnumerable<ApplicationUser>> AllUser()
         {
             //do code here
